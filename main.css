@@ -1,0 +1,517 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "FF Kievit Slab Std Bold";
+    src: url(font/KievitSlabWeb\ W03\ ExtraboldIt.ttf);
+}
+
+@font-face {
+    font-family: "Pentay Bold";
+    src: url(font/pentay.book.ttf);
+}
+
+@font-face {
+    font-family: "Veotec Regular";
+    src: url(font/Veotec\ W00\ Regular.ttf);
+}
+
+/* Partie du bandeau brun foncé en haut de page */
+
+.bandeau {
+    background-color: rgb(84, 47, 25);
+    width: auto;
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.section {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.bandeau p {
+    padding-left: 3%;
+    margin: 0;
+}
+
+.bandeau ul {
+    padding-right: 3%;
+    list-style-type: none;
+}
+
+.bandeau li {
+    display: inline-block;
+    padding-left: 30px;
+    vertical-align: middle;
+}
+
+.bandeau a {
+    text-decoration: none;
+    color: white;
+}
+
+.bandeau a:hover {
+    color: rgb(170, 122, 80);
+}
+
+.bandeau img {
+    width: 25%;
+    padding-right: 10px;
+    filter: invert(100%);
+    vertical-align: middle;
+    padding-bottom: 3%; 
+
+}
+
+/* Partie centrale (logo, menu et articles) */
+
+.content {
+    background-color: rgb(199, 178, 153);
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    width: 70%;
+}
+
+.logo img {
+    width: 35%;
+    padding: 2%;
+}
+
+.menu-desktop {
+    background-color: rgb(170, 122, 80);
+    font-family: "Pentay Bold";
+    color: white;
+    font-size: 25px;
+}
+
+.menu-mobile {
+    display: flex;
+    background-color: rgb(170, 122, 80);
+    font-family: "Pentay Bold";
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    margin: 0;
+    padding: 0; 
+}
+
+.menu-mobile p {
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 30%;
+}
+
+.menu-mobile img {
+    padding-left: 25%;
+    filter: invert(100%);
+    width: 38%;
+}
+
+.menu-mobile a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-desktop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-desktop li {
+    display: inline-block;
+    padding: 2%;
+    top: 30px;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-desktop a:hover {
+    color: rgb(84, 47, 25);
+}
+
+.article1 {
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.article1 div {
+    position: relative;
+    width:100%;
+}
+
+.article1 img {
+    margin: -2px;
+    margin-top: 20px;
+}
+
+.image2 {
+    padding-top: 3%;
+}
+
+.image1 p {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    color: black;
+    margin: 0 auto;
+    bottom: 7%;
+    left: 25%;
+    font-size: 30px;
+    font-family: "Pentay Bold";
+    font-weight: bold;
+}
+
+.image2 p {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: "Pentay Bold";
+    font-weight: bold;
+}
+
+#img1 {
+    width: 100%;
+}
+
+#img2 {
+    width: 100%;
+    margin-right: 3%;
+}
+
+.img1-mobile img {
+    width: 95%;
+}
+
+.img2-mobile img {
+    width: 100%;
+}
+
+.img1-mobile p {
+    font-family: "Pentay Bold";
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.img2-mobile p {
+    font-family: "Pentay Bold";
+    font-size: 30px;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.article2 {
+    border-top: 2px solid rgb(243, 243, 243);
+    border-bottom: 2px solid rgb(243, 243, 243);
+    border-bottom-width: 5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.texte1 {
+    width: 50%;
+}
+
+.texte1 h2 {
+    text-align: center;
+    font-family: "Pentay Bold";
+    font-size: 400%;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.texte1 h1 {
+    text-align: center;
+    font-family: "Pentay Bold";
+    color: rgb(170, 122, 80);
+    letter-spacing: 3px;
+    font-size: 450%;
+    margin: 0;
+}
+
+.texte2 {
+    text-align: left;
+    width: 50%;
+}
+
+.texte2 p {
+    margin: 0;
+    font-size: 18px;
+    font-family: "Veotec Regular";
+}
+
+.texte2 div {
+    margin-top: 5%;
+    margin-left:5%;
+}
+
+.texte2 button {
+    margin:5%;
+    padding:6px 0 6px 0;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Pentay Bold";
+	background-color:rgb(170, 122, 80);
+	color:#fff;
+	width:150px;
+    border:none;
+    outline:none;
+}
+
+.texte2 button:hover {
+    color: rgb(84, 47, 25);
+}
+
+.article3 {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#img3 img {
+    width: 80%;
+}
+
+#img4 img {
+    width: 100%;    
+}
+
+#img5 img {
+    width: 100%;
+    padding-right: 40%;
+}
+
+#comments {
+    display: flex;
+}
+
+#comments p {
+    width: 33%;
+    font-family: "Pentay Bold";
+    font-weight: bold;
+    font-size: 20px;
+    font-style: bold;
+    padding-bottom: 1%;
+    padding-left: 2%;
+}
+
+/* Partie du footer */
+
+.footer {
+    background-color: rgb(170, 122, 80);
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer ul {
+    padding: 1%;
+}
+
+#menufooter {
+    display: inline-block;
+    font-family: "Pentay Bold";
+    font-size: 25px;
+    width: 100%;
+}
+
+#menufooter li {
+    display: inline-block;
+    padding-left: 3%;
+}
+
+#menufooter a {
+    text-decoration: none;
+    color:white;
+}
+
+#menufooter a:hover {
+    color: rgb(84, 47, 25);
+}
+
+#mentions ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 2%;
+}
+
+#mentions li {
+    display: inline-block;
+    padding-left: 1%;
+}
+
+#mentions a {
+    text-decoration: none;
+    color: white;
+}
+
+#mentions a:hover {
+    color: rgb(84, 47, 25);
+}
+
+/* Medias queries */
+
+@media (max-width: 1175px) {
+    .article1 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .article2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texte1 h1 {
+        font-size: 300%;
+    }
+
+    .texte1 h2 {
+        font-size: 250%;
+    }
+}
+
+@media (max-width: 778px) {
+    .texte1 {
+        width: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width:668px) {
+    .section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section p {
+        width: 100%;
+        background-color: rgb(170, 122, 80);
+        padding: 2%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+    }
+
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: none;
+    }
+
+    .article1 {
+        padding: 0;
+    }
+
+    .texte2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .article3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img3 img {
+        width: 90%;
+    }
+
+    #img4 img {
+        width: 90%;    
+    }
+
+    #comments {
+        display: none;
+    }
+
+    .article3 p {
+        font-family: "Pentay Bold";
+        font-weight: bold;
+        font-size: 20px;
+        font-style: bold;
+        margin: 0;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+
+    #menufooter li {
+        display: block;
+        padding: 5%;
+    }
+
+    #mentions li {
+        display: block;
+        padding: 5%;
+    }
+
+    #mentions ul {
+        padding-bottom: 5%;
+    }
+}
+
+@media (min-width: 669px) {
+    .menu-desktop {
+        display: block;
+    }
+
+    .img1-mobile {
+        display: none;
+    }
+    .img2-mobile {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .article3 p {
+        display: none;
+    }
+}
